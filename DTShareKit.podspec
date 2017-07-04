@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DTShareKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Dingtalk (钉钉) Share SDK."
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,10 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  # s.license      = "dingtalk.com"
+  s.license      = { :type => 'GPL', :text => <<-LICENSE
+                                                   Dingtalk All Rights Reserved.
+                                                   LICENSE
+                          }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
