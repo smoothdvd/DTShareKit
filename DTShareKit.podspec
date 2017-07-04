@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DTShareKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Dingtalk (钉钉) Share SDK."
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "dingtalk.com"
+  # s.license      = "dingtalk.com"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  # s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -135,6 +135,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.xcconfig = { "OTHER_LDFLAGS" => "-all_load" }
   s.ios.vendored_frameworks = 'DTShareKit.framework'
 
 end
